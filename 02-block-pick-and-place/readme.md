@@ -41,7 +41,7 @@ Update the `part_1/main.py` file with the following steps:
 
 ### Helpful tips
 
-- On the left sidebar of the MuJoCorenderer, click: 
+- On the left sidebar of the MuJoCo Renderer, click: 
   - `Rendering > Frame > Site|Body|Geom` to toggle rendering of the coordinate frames
   - `Rendering > Label > Site|Body|Geom` to toggle rendering of the labels
 - Helpful utils are provided for you to in the robohive library:
