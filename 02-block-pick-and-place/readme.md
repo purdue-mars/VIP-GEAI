@@ -29,12 +29,12 @@ poetry shell
 
 Goal: get the robot to pick up the brick in the right bin and place it in the left bin within the **target green zone** via following a precomputed trajectory open-loop
 
-To run the script:
+To run the starter script:
 ``` 
 python3 part_1/main.py 
 ```
 > NOTE: Initially, the robot will just go to the **target green zone**
-
+Update the `part_1/main.py` file with the following steps:
 1. STEP 1.1: Generate Task-relevant Poses
 2. STEP 1.2: Create Joint-position trajectory following the task-relevant poses
 
