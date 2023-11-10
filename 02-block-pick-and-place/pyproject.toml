@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pick-n-place"
+version = "0.1.0"
+description = ""
+authors = ["Raghava Uppuluri <raghava.upp13@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+robohive = {git = "https://github.com/raghavauppuluri13/robohive"}
+vtils = {git = "https://github.com/raghavauppuluri13/vtils"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

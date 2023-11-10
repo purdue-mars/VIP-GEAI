@@ -1,5 +1,5 @@
 # VIP-GEAI
-Course Info for VIP-GEAI
+Course Info for [VIP-GEAI](https://engineering.purdue.edu/VIP/teams/ge-ai)
 
 ### [`01-intro-to-robotics`](https://github.com/raghavauppuluri13/VIP-GEAI/blob/master/01-intro_to_robotics.ipynb)
 
