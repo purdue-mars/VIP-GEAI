@@ -10,14 +10,16 @@ DESC = """
 DESCRIPTION: Simple Box Pick and Place \n
 HOW TO RUN:\n
     - Ensure poetry shell is activated \n
-    - python pick_n_place.py \n
+    - python3 main.py \n
 """
 
 from robohive.physics.sim_scene import SimScene
 from robohive.utils.inverse_kinematics import qpos_from_site_pose
 from robohive.utils.min_jerk import *
 from robohive.utils.quat_math import euler2quat, quat2mat, mat2quat
-from robohive.utils.xml_utils import replace_simhive_path
+from pick_n_place.utils.xml_utils import replace_simhive_path
+
+from pathlib import Path
 
 import click
 import numpy as np
@@ -35,12 +37,13 @@ ARM_nJnt = 7
     type=str,
     help="environment to load",
     required=True,
-    default="env/pick_place.xml",
+    default="pick_place.xml",
 )
 @click.option("-h", "--horizon", type=int, help="time (s) to simulate", default=2)
 def main(sim_path, horizon):
     # Prep
-    sim_xml = replace_simhive_path(sim_path)
+    sim_path = Path(__file__).parent.parent.absolute() / "env" / sim_path
+    sim_xml = replace_simhive_path(str(sim_path))
     print(f"Loading {sim_xml}")
     sim = SimScene.get_sim(model_handle=sim_xml)
 

@@ -31,6 +31,7 @@ Goal: get the robot to pick up the brick in the right bin and place it in the le
 
 To run the starter script:
 ``` 
+cd pick_n_place
 python3 part_1/main.py 
 ```
 > NOTE: Initially, the robot will just go to the **target green zone**
