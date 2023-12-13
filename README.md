@@ -22,7 +22,7 @@ This project aims to introduce the building blocks of robot manipulation, starti
 
 Get the robot to pick up the brick in the right bin and place it in the left bin within the target green zone via following a joint-space trajectory in open-loop
 
-#### Part 2: Oops! Knocked something over! Adding obstacles avoidance...
+#### Part 2: Oops! Knocked something over! Adding obstacle avoidance...
 
 A gentle introduction to motion planning algorithms to create collision-free trajectories to complete the pick and place task.
 
