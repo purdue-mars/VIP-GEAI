@@ -17,6 +17,9 @@ This project aims to introduce the building blocks of robot manipulation, starti
 
 #### Part 1: Open-loop Box Pick and Place
 
+![arm](https://github.com/purdue-mars/VIP-GEAI/assets/41026849/86a71edf-deba-46dc-b1db-776b7b55c050)
+> Final student demo from Fall 2023
+
 Get the robot to pick up the brick in the right bin and place it in the left bin within the target green zone via following a joint-space trajectory in open-loop
 
 #### Part 2: Oops! Knocked something over! Adding obstacles avoidance...
