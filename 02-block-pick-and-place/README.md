@@ -1,10 +1,15 @@
 # Project 2
 
 ## Preliminary Steps
-1. Install MuJoCo and poetry
+1. Install MuJoCo and pyenv (python version management)
 
 - [Install Mujoco](https://mujoco.readthedocs.io/en/stable/programming/index.html#getting-started)
-- [Install poetry](https://python-poetry.org/docs/#installing-with-the-official-installer)
+- Install pyenv
+
+```
+curl https://pyenv.run | bash
+pyenv install 3.9.18
+```
 
 2. Clone repo 
 
@@ -13,16 +18,12 @@ git clone https://github.com/purdue-mars/VIP-GEAI
 cd 02-block-pick-and-place
 ```
 
-3. Install dependencies 
+3. Create virtual environemnt, install repo, and dependencies 
 
 ```
-poetry install
-```
-
-4. Intialize virtual environment
-
-```
-poetry shell
+pyenv virtualenv 3.9.18 pick_n_place 
+pyenv activate pick_n_place
+pip3 install -e .
 ```
 
 ## Part 1: Open-loop Box Pick and Place
