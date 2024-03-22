@@ -1,24 +1,41 @@
 # Project 2
 
+## Supported Platforms
+- Ubuntu
+- Windows
+    - Must use [WSL](https://docs.microsoft.com/en-us/windows/wsl) (Windows Subsystem for Linux)
+- MacOS
+
 ## Preliminary Steps
 1. Install MuJoCo and pyenv (python version management)
-
 - [Install Mujoco](https://mujoco.readthedocs.io/en/stable/programming/index.html#getting-started)
 - Install pyenv
 
+Linux/WSL:
 ```
 curl https://pyenv.run | bash
+echo -e 'export PATH="$HOME/.pyenv/bin:$PATH"\neval "$(pyenv init --path)"\neval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+```
+> NOTE: echo command adds pyenv to .bashrc to start it every time you open a terminal
+
+MacOS:
+```
+brew install pyenv
+brew install pyenv-virtualenv
+```
+2. Install known working version of python
+```
 pyenv install 3.9.18
 ```
 
-2. Clone repo 
+3. Clone repo 
 
 ```
 git clone https://github.com/purdue-mars/VIP-GEAI
 cd 02-block-pick-and-place
 ```
 
-3. Create virtual environemnt, install repo, and dependencies 
+4. Create virtual environemnt, install repo, and dependencies 
 
 ```
 pyenv virtualenv 3.9.18 pick_n_place 
