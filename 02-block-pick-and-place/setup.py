@@ -11,7 +11,6 @@ setup(
     url="https://github.com/purdue-mars/VIP-GEAI",
     author="Raghava Uppuluri",
     install_requires=[
-        "robohive @ git+ssh://git@github.com/raghavauppuluri13/robohive.git",
-        "vtils @ git+ssh://git@github.com/raghavauppuluri13/vtils.git",
+        "robohive==v0.7",
     ],
 )
